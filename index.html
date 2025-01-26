@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/ajax.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/ajax.js" defer></script>
+    <title>Planet animel</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Planet animals</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="animal-name" placeholder="Enter animal name" class="search-input">
+            <button id="search-button" class="animal-button">Search Animal</button>
+            <button id="load-recent" class="animal-button">Load Recent Searches</button>
+        </div>
+        
+        <div id="loading" class="loading-spinner">Try serching for the animal :] </div>
+        <div id="error-message" class="error" style=display:none;></div>
+        
+        <div class="results-container">
+            <div id="animal-results" class="animal-grid"></div>
+        </div>
+        
+        <div class="recent-searches">
+            <h3>Recent Searches: </h3>
+            <div id="recent-list"></div>
+        </div>
+    </main>
+</body>
+</html>

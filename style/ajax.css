@@ -1,0 +1,151 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #4a9b52;
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+header {
+   background-color: #5e9d52;
+   padding: 24px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h1 {
+   color: rgb(155, 198, 225);
+   margin: 0;
+   font-size: 3rem;
+   text-align: center;
+   font-weight: bold;
+}
+
+h2, h3 {
+   color: white;
+   font-size: 2rem;
+   margin: 19px 0;
+}
+
+main {
+   padding: 19px;
+   text-align: center;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+.search-container {
+   margin: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   justify-content: center;
+}
+
+.search-input {
+   padding: 8px 16px;
+   border: none;
+   border-radius: 10px;
+   font-size: 1rem;
+   width: 250px;
+}
+
+.animal-button {
+   background-color: #8bc34a;
+   color: white;
+   padding: 8px 16px;
+   transition: all linear 0.8s;
+   cursor: pointer;
+   border-radius: 10px;
+   border: none;
+   font-size: 1rem;
+   font-weight: bold;
+}
+
+.animal-button:hover {
+   background-color: #689f38;
+}
+
+.animal-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+}
+
+.animal-card {
+   background-color: rgba(65, 159, 153, 0.95);
+   padding: 20px;
+   border-radius: 10px;
+   text-align: left;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.animal-characteristic {
+   background-color: #f0dd89;
+   padding: 5px 10px;
+   border-radius: 5px;
+   margin: 2px;
+   display: inline-block;
+}
+
+.error {
+   color: #ff3860;
+   background-color: rgba(255, 255, 255, 0.9);
+   padding: 10px;
+   border-radius: 5px;
+   margin: 10px 0;
+}
+
+.loading-spinner {
+   color: white;
+   font-size: 1.2rem;
+   margin: 20px 0;
+}
+
+.recent-searches {
+   margin-top: 30px;
+}
+
+#recent-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+}
+
+.recent-search-item {
+   background-color: rgba(255, 255, 255, 0.7);
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.recent-search-item:hover {
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.characteristic-title {
+   font-weight: bold;
+   color: #2c5530;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+   h1 {
+       font-size: 2rem;
+   }
+   
+   .search-container {
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .search-input {
+       width: 100%;
+       max-width: 300px;
+   }
+}
